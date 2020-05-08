@@ -19,7 +19,9 @@
      
      nav {
          background-color: rgb(43, 73, 63);
-         margin-bottom: 80px;
+         position: fixed;
+         width: 100%;
+         top: 0;
      }
      
      .image {
@@ -28,23 +30,23 @@
      
      .nav-title {
          text-align: center;
-         padding-bottom: 20px;
-         padding-top: -20px;
          color: rgb(139, 205, 183);
      }
      
      .main-nav .logo {
          width: 140px;
-         margin-top: 20px;
+         margin: 10px 10px;
      }
      
      #root {
          color: rgb(253, 253, 253);
          display: grid;
          grid-gap: 30px;
-         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-         margin: auto 10px;
-         height: 30px;
+         grid-template-columns: repeat(auto-fill, minmax(320px, 3fr));
+         height: 80px;
+         margin-left: 10px;
+         margin-right: 10px;
+         margin-bottom: 1880px;
      }
      
      .container {
@@ -66,8 +68,8 @@
          display: block;
          margin-left: auto;
          margin-right: auto;
-         margin-top: 40px;
-         margin-bottom: 50px;
+         margin-top: 210px;
+         margin-bottom: 10px;
          width: 400px;
          height: 30px;
          border-radius: 1px;
@@ -135,3 +137,27 @@
     margin-right: 3px;
     margin-top: -5px;
 } */
+     
+     .nav-title {
+         background: transparent;
+         border: solid rgb(116, 177, 177) 20px;
+         outline: 10px solid #fff;
+         outline-offset: -9px;
+     }
+     
+     .footer {
+         position: fixed;
+         background: rgb(43, 73, 63);
+         color: #79b9b7;
+         font-size: 12px;
+         padding: 2px 0;
+         text-align: center;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+     }
+     
+     .img {
+         width: 80px;
+         margin: 1px 10px;
+     }

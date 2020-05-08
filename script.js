@@ -28,7 +28,7 @@ function makePageForEpisodes(episodeList) {
         text.innerHTML = `${
         episodeList[i].summary.length < 50
           ? episodeList[i].summary
-          : episodeList[i].summary.substring(0, 200)
+          : episodeList[i].summary.substring(0, 400)
       }....`;
         element.classList.add("title");
         image.classList.add("image");
