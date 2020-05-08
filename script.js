@@ -16,13 +16,13 @@ window.onload = setup;
 // console.log(hanif);
 
 function makePageForEpisodes(episodeList) {
-    var rootElem = document.getElementById("root");
+    const rootElem = document.getElementById("root");
     //rootElem.textContent = `Got ${episodeList[0].id} episode(s)`;
-    for (var i = 0; i < episodeList.length; i++) {
-        var container = document.createElement("div");
-        var element = document.createElement("h4");
-        var image = document.createElement("img");
-        var text = document.createElement("p");
+    for (let i = 0; i < episodeList.length; i++) {
+        let container = document.createElement("div");
+        let element = document.createElement("h4");
+        let image = document.createElement("img");
+        let text = document.createElement("p");
         element.textContent = `${episodeList[i].name} - S0${episodeList[i].season}E0${episodeList[i].number}`;
         image.src = episodeList[i].image.medium;
         text.innerHTML = `${
@@ -43,8 +43,8 @@ function makePageForEpisodes(episodeList) {
 
     return rootElem;
 }
-var filter, main, container, title, text, i, txtValue, pValue;
-var input = document.getElementById("myInput");
+let filter, main, container, title, text, i, txtValue, pValue;
+let input = document.getElementById("myInput");
 input.addEventListener("keyup", function myFunction() {
     filter = input.value.toUpperCase();
 
